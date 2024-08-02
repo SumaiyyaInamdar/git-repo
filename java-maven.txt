@@ -1,0 +1,18 @@
+Download Maven
+
+https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+
+tar -xf apache-maven-3.8.8-bin.tar.gz -C /opt/
+
+nano ~/.bashrc
+
+eexport JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export M2_HOME=/opt/apache-maven-3.8.8
+export MAVEN_HOME=/opt/apache-maven-3.8.8
+export PATH=${M2_HOME}/bin:${PATH}
+
+source ~/.bashrc
+
+mvn --version
+
+echo $JAVA_HOME
